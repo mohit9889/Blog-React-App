@@ -1,0 +1,135 @@
+.no-blog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.admin-allblog h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.addblog h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.addblog button {
+    margin-bottom: 30px;
+}
+
+.tabbar {
+    margin-top: 30px;
+}
+
+.tabbar li a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    color: #212121;
+    text-align: center;
+    margin-left: 20px;
+    font-family: Montserrat-Regular;
+}
+
+.admin-blogs .card h5 {
+    font-family: Montserrat-SemiBold;
+    color: #212121;
+}
+
+.admin-blogs .card p {
+    font-family: Montserrat-Regular;
+    color: #212121;
+}
+
+.admin-blogs .card a {
+    font-family: Montserrat-Regular;
+    margin-top: 20px;
+}
+
+.admin-blogs {
+    margin-bottom: 20px;
+}
+
+.admin-blogs .card {
+    width: 18rem;
+}
+
+.admin-blogs .btn-danger{
+    margin-left: 10px;
+}
+
+.admin-blogs .card img{
+    width: 100%;
+    height: 15rem;
+}
+
+.admin-all-blogs{
+    margin-top: 30px;
+}
+
+.admin-all-blogs .row {
+    margin-top: 20px;
+}
+
+/* Add Blog */
+.addblog{
+    width: 100%;
+    height: 100vh;
+}
+
+.addblog-form{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addblog-form .form-group {
+    width: 80%;
+}
+
+.addblog-form button {
+    width: 80%;
+    margin-top: 20px;
+}
+
+
+.custom-file input[type="file"] {
+    display: none;
+}
+
+.custom-file label {
+    color: white;
+    height: 50px;
+    width: 200px;
+    background-color:#007BFF;
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-file label i {
+    margin-right: 10px;
+}
+
+.admin-all-blogs .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 574px) {
+    .admin-all-blogs .row .admin-blogs{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}

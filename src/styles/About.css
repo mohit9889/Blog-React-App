@@ -1,0 +1,367 @@
+.about_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  height: 100%;
+  color: #404040;
+  flex-direction: column;
+}
+
+.about_container h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: Montserrat-SemiBold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #212121;
+}
+
+.about-image {
+  grid-area: image;
+  background-image: url("../images/author.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details {
+  grid-area: details;
+}
+
+.details_1 {
+  font-size: 1.5vw;
+  font-family: Montserrat-SemiBold;
+  font-weight: 400;
+  color: #212121;
+}
+
+.details_2 {
+  font-family: "Helvetica";
+  font-size: 1.1vw;
+  font-weight: 200;
+  color: gray;
+}
+
+.details_3 {
+  font-size: 1.2vw;
+  font-weight: 100;
+  color: darkgray;
+  letter-spacing: 1px;
+  font-family: "Helvetica";
+}
+
+.who {
+  grid-area: who;
+  font-size: 1.5vw;
+  font-family: Montserrat-SemiBold;
+  color: #212121;
+  font-weight: 400;
+}
+
+.who_1 {
+  font-family: "Helvetica";
+  font-size: 1.8vw;
+  font-weight: 100;
+  color: gray;
+  padding-right: 25px;
+  letter-spacing: 1px;
+}
+
+.why {
+  grid-area: why;
+  font-size: 1.5vw;
+  font-family: Montserrat-SemiBold;
+  color: #212121;
+  font-weight: 400;
+}
+
+.why_1 {
+  font-family: "Helvetica";
+  font-size: 1.1vw;
+  color: gray;
+  padding-right: 25px;
+}
+
+.skills {
+  grid-area: skills;
+  font-size: 1.5vw;
+  font-family: Montserrat-SemiBold;
+  color: #212121;
+  font-weight: 400;
+}
+
+.social_logo {
+  height: 30px;
+  width: 30px;
+  margin-right: 35px;
+}
+
+.social_logo:hover {
+  transition: transform 0.05s;
+  transform: scale(1.1);
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "twitter fb insta pin";
+  width: 50%;
+}
+
+.twitter {
+  grid-area: twitter;
+  background-image: url("https://uploads.codesandbox.io/uploads/user/dd38e1d3-3de3-47a6-9118-a08cc99696c1/KnNK-twitter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fb {
+  grid-area: fb;
+  background-image: url("https://uploads.codesandbox.io/uploads/user/dd38e1d3-3de3-47a6-9118-a08cc99696c1/ErIq-fb.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.insta {
+  grid-area: insta;
+  background-image: url("https://uploads.codesandbox.io/uploads/user/dd38e1d3-3de3-47a6-9118-a08cc99696c1/hltF-insta.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pin {
+  grid-area: pin;
+  background-image: url("https://uploads.codesandbox.io/uploads/user/dd38e1d3-3de3-47a6-9118-a08cc99696c1/3YNU-pin.png ");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bars {
+  font-family: "Helvetica";
+  font-size: 1vw;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.photoshop {
+  background-color: orange;
+  height: 10px;
+  width: 90%;
+}
+
+.final_cut {
+  background-color: #ee669a;
+  height: 10px;
+  width: 75%;
+}
+
+.studio {
+  background-color: #d283db;
+  height: 10px;
+  width: 80%;
+}
+
+/* MOBILE VIEW */
+@media only screen and (min-width: 100px) {
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 14fr 4fr 1fr 1fr 2fr;
+    grid-template-areas:
+      "about"
+      "image"
+      "details"
+      "who"
+      "why"
+      "skills";
+    height: 200vh;
+    width: 90%;
+    margin: 1.5em;
+  }
+
+  .about-image {
+    height: 300px;
+    width: 100%;
+  }
+
+  .about {
+    font-size: 2rem;
+  }
+
+  .details {
+    padding-top: 10px;
+  }
+
+  .details_1 {
+    font-size: 1.2rem;
+  }
+
+  .details_2 {
+    font-size: 0.9rem;
+  }
+
+  .details_3 {
+    font-size: 1rem;
+  }
+
+  .who {
+    padding-top: 15px;
+    font-size: 1.2rem;
+  }
+
+  .who_1 {
+    font-size: 1.25rem;
+  }
+
+  .why {
+    padding-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  .why_1 {
+    font-size: 0.9rem;
+  }
+
+  .skills {
+    padding-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  .photoshop {
+    height: 6px;
+  }
+
+  .final_cut {
+    height: 6px;
+  }
+
+  .studio {
+    height: 6px;
+  }
+
+  .bars {
+    font-size: 0.8rem;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* IPAD VIEW */
+@media only screen and (min-width: 415px) {
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 2fr 4fr;
+    grid-template-areas:
+      "about about about"
+      "image image image"
+      "details details details"
+      "who why skills";
+    height: 150vh;
+    width: 95%;
+    margin: 1.3em;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 800px;
+  }
+
+  .about {
+    font-size: 2rem;
+  }
+
+  .details {
+    font-size: 2rem;
+  }
+
+  .details_1 {
+    font-size: 1.2rem;
+  }
+
+  .details_2 {
+    font-size: 0.9rem;
+  }
+
+  .details_3 {
+    font-size: 1rem;
+  }
+
+  .social {
+    width: 20%;
+  }
+
+  .who {
+    font-size: 1.2rem;
+    padding-top: 15px;
+  }
+
+  .who_1 {
+    font-size: 1.25rem;
+  }
+
+  .why {
+    font-size: 1.2rem;
+    padding-top: 15px;
+  }
+
+  .why_1 {
+    font-size: 0.9rem;
+  }
+
+  .skills {
+    font-size: 1.2rem;
+    padding-top: 15px;
+  }
+
+  .bars {
+    font-size: 0.9rem;
+    padding-top: 10px;
+  }
+}
+
+/* LAPTOP VIEW */
+@media only screen and (min-width: 1025px) {
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr 2fr;
+    grid-template-areas:
+      "about    about    about    about      about      about"
+      "image    image    image    details    details    details"
+      "who      who      why      why        skills     skills";
+    height: 110vh;
+    width: 85%;
+    margin: 2em;
+  }
+
+  .about-image {
+    height: 500px;
+    width: 100%;
+  }
+
+  .details {
+    padding-left: 25px;
+  }
+
+  .who {
+    padding-top: 55px;
+  }
+
+  .why {
+    padding-top: 55px;
+  }
+
+  .skills {
+    padding-top: 55px;
+  }
+
+  .bars {
+    padding-top: 15px;
+  }
+}

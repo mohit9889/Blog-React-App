@@ -1,0 +1,176 @@
+.about,.services,.gallery,.team-dot,.news,.contact,.footer{
+    padding:4em 0;
+    padding-bottom: 0;
+}
+.w3l-about-left h2,.w3l-about-right h3,.agile-heading h3{
+	font-size: r4em;
+    color: #212121;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+.w3l-about-left h5,.w3l-about-right h5{
+    font-size: 1rem;
+    color: #212121;
+    text-decoration: none;
+    margin: 1em 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+.w3l-about-left p,.w3l-about-right p{
+	color:#999999;
+	font-size:1rem;
+	margin:0;
+	line-height:1.8rem;
+}
+.w3l-about-left p span{
+	margin:1em 0 0 0;
+	display:block;
+}
+.w3l-about-img{
+    background: url("../images/home-about-img.jpg") no-repeat 0px -167px;
+    background-size: cover;
+    min-height: 400px;
+}
+.w3l-button {
+    margin: 2em 0 1em 0;
+}
+.w3l-button a {
+    color: black;
+    font-size: .9rem;
+    text-decoration: none;
+    padding: .5em 2em;
+    background: white;
+    text-transform: uppercase;
+    text-align: center;
+    border: solid 1px black;
+}
+.w3l-button a:hover {
+	background: black;
+    border: solid 1px #212121;
+    color: white;
+}
+.w3l-button a:focus{
+	outline:none;
+}
+/*-- about --*/
+
+
+/* Services */
+.services .container {
+    padding: 64px;
+}
+
+.services .container .row {
+    justify-content: center;
+}
+
+.services h2{
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: Montserrat-SemiBold;
+    margin-bottom: 50px;
+}
+
+.single-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #212121;
+    height: 400px;
+    transition: all 0.9s ease 0s;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3), 0 0 6px rgba(0,0,0,0.3);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.single-service:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.single-service i{
+    color: tomato;
+    font-size: 80px;
+}
+
+.single-service h3 {
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Montserrat-SemiBold;
+    margin-top: 20px;
+}
+
+.single-service p{
+    color: white;
+    font-size: 15px;
+    font-family: Montserrat-Regular;
+}
+
+.single-service hr {
+    background-color: white;
+}
+
+/* Gallery */
+.home-gallery h2{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: Montserrat-SemiBold;
+}
+
+.home-gallery .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home-gallery img{
+    height: 300px;
+    width: 260px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.home-gallery .img-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.home-gallery .img-col:hover{
+    transform: scale(1.05);
+}
+
+.home-gallery .row {
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-gallery button {
+    height: 40px;
+    width: 150px;
+    border: 1px solid black;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.home-gallery button:hover {
+    color: white;
+    background-color: #212121;
+}

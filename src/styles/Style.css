@@ -1,0 +1,23 @@
+.navbar {
+   padding-left: 10em;
+   padding-right: 10em;
+}
+
+.navbar .navbar-brand {
+    font-family: Lucida;
+}
+
+.navbar .nav-item, button {
+    font-family: Montserrat;
+}
+
+.navbar .active {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 990px) {
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

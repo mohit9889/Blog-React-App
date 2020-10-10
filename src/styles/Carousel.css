@@ -1,0 +1,90 @@
+.site-blocks-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position: center center;
+  background-color: #212121;
+}
+
+.site-blocks-cover.overlay {
+  position: relative;
+}
+
+.site-blocks-cover.overlay:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.site-blocks-cover.overflow-hidden {
+  overflow: hidden;
+}
+
+.site-blocks-cover,
+.site-blocks-cover > .container > .row {
+  height: calc(80vh);
+  min-height: 400px;
+}
+
+.site-blocks-cover.inner-page-cover,
+.site-blocks-cover.inner-page-cover > .container > .row {
+  min-height: 400px;
+  height: calc(20vh);
+}
+
+.site-blocks-cover h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: 900;
+  font-family: Montserrat-SemiBold;
+}
+
+.site-blocks-cover p {
+  color: white;
+  font-size: 1.3rem;
+  font-family: Montserrat;
+}
+
+
+.owl-nav button {
+  background-color: white !important;
+  border: 1px solid black !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+}
+
+.owl-nav button:hover {
+  background-color: black !important;
+}
+
+.site-wrap button {
+  border: white;
+  background-color: white;
+  height: 40px;
+  width: 120px;
+  margin-top: 20px;
+}
+
+.site-wrap button:hover {
+  border: white;
+  background-color: tomato;
+  height: 40px;
+  width: 120px;
+  color: white;
+}
+
+
+@media only screen and (max-width: 367px) {
+  .site-blocks-cover h1 {
+    font-size: 2.5rem;
+  }
+
+  .site-blocks-cover p {
+    font-size: 0.9rem;
+  }
+}

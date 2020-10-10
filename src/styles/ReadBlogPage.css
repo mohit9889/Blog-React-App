@@ -1,0 +1,44 @@
+.readblog .img-container {
+    padding: 0;
+}
+
+.readblog .img-container img {
+    object-fit: cover;
+}
+
+.readblog .content{
+    padding: 2em !important;
+}
+
+.readblog h1 {
+    font-family: Montserrat-Bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.readblog h5 {
+    font-family: Montserrat-SemiBold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    font-size: 25px;
+    color: #DCDCDC;
+}
+
+.readblog p {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 2.5rem;
+    color: #212121;
+    word-spacing: .2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .readblog .img-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
